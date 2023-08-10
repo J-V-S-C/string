@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
+#include <conio.h>
+
+main()
+
+{
+
+    setlocale(LC_ALL, "portuguese");
+    system("color 0E");
+    int i, j=0;
+    char L1[70], L2[70], letra;
+    printf("Escreva uma frase!\n");
+    gets(L1);
+
+    printf("Escreva uma letra pra tira da frase\n");
+    scanf("%c", &letra);
+
+    for(i=0; i<70; i++)
+    {
+
+    if(L1[i]!=letra)
+    {L2[j]=L1[i];
+    j++;}}
+
+    printf("Sua frase sem essa letra:\n");
+    puts(L2);
+    getch();
+
+
+
+
+}
+
+
+/*Escreva um programa em C para ler uma frase e uma letra. A seguir retirar da frase, todas
+as letras iguais à informada. Imprimir a frase modificada.*/
