@@ -1,0 +1,39 @@
+/*Um teste composto por dez questões foi proposto a um aluno. Cada questão admite as
+alternativas identificadas pelas letras A, B, C, D e E. Você deverá solicitar antes de tudo o
+gabarito do teste, que deverá ser armazenado em uma matriz string. Solicite as respostas
+para cada questão e guarde-as em uma matriz string. Você deverá desenvolver um
+algoritmo que seja capaz de escrever a quantidade de acertos que o aluno obteve.*/
+
+#include <stdio.h>
+#include <locale.h>
+#include <string.h>
+#include <conio.h>
+
+main()
+
+{
+
+    setlocale(LC_ALL, "portuguese");
+
+    system("color 0E");
+
+    int i, j=0;
+
+    char gabarito[10],Resposta[10], letra;
+
+    for(i=0; i<10; i++)
+
+    {
+    printf("Escreva o gabarito\n");
+    scanf("%s",&gabarito[i]);
+    
+    if((gabarito[i]!='A'||))
+    }
+
+
+
+
+    printf("Sua frase sem essa letra:\n");
+
+
+}
