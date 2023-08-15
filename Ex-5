@@ -1,0 +1,82 @@
+/*O cardápio de uma casa de lanches, especializada em sanduíches, é exemplificado a
+seguir. Escreva um algoritmo que leia o código e a quantidade de cada item comprado por
+um freguês calcule e exiba o total a pagar. (Obs.: A leitura de código “X” indica o fim dos
+itens).
+Código Produto Preço (R$)
+H Hamburguer 5,00
+C Cheeseburguer 6,00
+M Misto-quente 4,00
+A Americano 8,00
+Q Queijo-prato 7,00*/
+
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <string.h>
+
+
+int main()
+
+{
+    char cod;
+    int quant;
+    float total = 0;
+
+    setlocale(LC_ALL, "portuguese");
+
+    printf("Cardápio de Lanches\n");
+    printf("Código    Produto       Preço (R$)\n");
+    printf("  H      Hamburguer       5,00\n");
+    printf("  C     Cheeseburguer     6,00\n");
+    printf("  M     Misto-quente      4,00\n");
+    printf("  A      Americano        8,00\n");
+    printf("  Q     Queijo-prato      7,00\n");
+
+    printf("\nDigite o código e a quantidade de cada item comprado (digite 'X' para finalizar):\n");
+
+    while (1)
+        {
+            printf("Código: ");
+            scanf(" %c", &cod);
+
+
+            if (cod == 'X')
+                {
+                    break;
+                }
+
+            printf("Quantidade: ");
+            scanf("%d", &quant);
+
+            switch (cod)
+
+            {
+                case 'H':
+                    total += quant * 5.0;
+                    break;
+
+                case 'C':
+                    total += quant * 6.0;
+                    break;
+
+                case 'M':
+                    total += quant * 4.0;
+                    break;
+
+                case 'A':
+                    total += quant * 8.0;
+                    break;
+
+                case 'Q':
+                    total += quant * 7.0;
+                    break;
+
+                default:
+                    printf("Código inválido!\n");
+            }
+        }
+
+printf("Total a pagar: R$%.2f\n", total);
+
+}
