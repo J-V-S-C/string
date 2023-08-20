@@ -1,0 +1,138 @@
+ #include <stdio.h>
+ #include <conio.h>
+ #include <stdlib.h>
+ #include <locale.h>
+ #include <string.h>
+
+
+ main()
+ {
+
+     char p[10];
+
+     printf("Digite uma palavra:\n");
+     scanf(" %s", &p) ;
+
+     int tam = strlen (p);
+
+     for( int i=0; i<tam; i++)
+
+    {
+
+       if(i==0)
+        {printf("%s  ", p);}
+
+        else if(i==1)
+        {printf("%s  ", p);
+        printf("%s  ", p);}
+
+        else if(i==2)
+        {printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);}
+
+        else if(i==3)
+        {printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);}
+
+        else if(i==4)
+        {printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);}
+
+        else if(i==5)
+        {printf("%s  ", p);
+        printf("%s  ", p);printf("%s  ", p);printf("%s  ", p);printf("%s  ", p);printf("%s  ", p);}
+
+        else if(i==6)
+        {printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);}
+
+        else if(i==7)
+        {printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);}
+
+        else if(i==8)
+        {printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        }
+        else if(i==9)
+        {printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        }
+        else if(i==8)
+        {printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        }
+        else if(i==8)
+        {printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        printf("%s  ", p);
+        }
+
+
+       {printf("\n", p);}
+
+    }
+
+
+
+
+ }
+
+ /*Criar um algoritmo que entre com uma palavra e imprima conforme exemplo a seguir:
+Exemplo: SONHO Como a palavra SONHO tem 5 letras a impressão ficaria assim:
+SONHO
+SONHO SONHO
+SONHO SONHO SONHO
+SONHO SONHO SONHO SONHO
+SONHO SONHO SONHO SONHO SONHO
+Repare que foram impressos 5 vezes na horizontal e 5 na vertical.*/
